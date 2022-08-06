@@ -28,6 +28,8 @@ fileprivate struct RandomModel: Identifiable {
 }
 
 /*
+ Problem:
+ The problem here is that the content for next screen is being created as soon as this sheet modifier is added onto the screen, so when this VStack is drawn onto the screen, we draw this sheet and that's at the very beginning as soon as we load the next screen
  Solutions:
  1. use Binding
  2. multiple sheets

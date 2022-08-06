@@ -25,7 +25,6 @@ struct SampleTabBar: View {
                                 .matchedGeometryEffect(id: "subcategory", in: namespace)
                                 .frame(width: 55, height: 4)
                                 .offset(y: 10)
-                                
                         }
                         
                         Text(category)
