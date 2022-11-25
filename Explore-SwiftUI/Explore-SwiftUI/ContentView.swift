@@ -11,6 +11,10 @@ struct ContentView: View {
     var body: some View {
         Text("Hello, world!")
             .padding()
+            .onAppear {
+                var test = TestPrinter()
+                test.test()
+            }
     }
 }
 

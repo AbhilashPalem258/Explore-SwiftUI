@@ -10,10 +10,18 @@ import SwiftUI
 
 /*
  Source:
+ https://www.apeth.com/UnderstandingCombine/operators/operatorsJoiners/operatorszip.html
  
  Definition:
  
  Notes:
+ - Both publishers must have the same Failure generic types, but their Output types can be different
+ - When either of those upstream publishers produces a value, this operator puts it in a buffer (effectively a FIFO stack)
+ - When both of those upstream publishers have produced a value — that is, any time there is something in both buffers — this operator pops the oldest value from the start of both buffers, combines them into a tuple, and emits the tuple
+ - If either upstream publisher emits a .finished completion, then if the buffer for that publisher is empty (because the .zip operator has popped its last value to send it downstream), the .zip operator cancels the other publisher and sends a .finished completion downstream
+ - If either upstream publisher sends a failure, this operator immediately cancels the other publisher and sends the completion on downstream.
+ 
+
  */
 fileprivate struct DataService {
     func makeZipPublisher() -> AnyPublisher<String, Never> {

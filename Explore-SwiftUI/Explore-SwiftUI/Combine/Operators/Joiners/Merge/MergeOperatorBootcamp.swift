@@ -9,6 +9,21 @@ import Combine
 import Foundation
 import SwiftUI
 
+/*
+ Source:
+ 
+ Definition:
+ .merge(with:) takes a publisher as a parameter; it is also applied to a publisher (obviously). Both publishers must have the same Output and Failure generic types. Now there are effectively two upstream publishers. When either of those upstream publishers produces a value, this operator passes that value downstream. The two streams of values are interleaved.
+ 
+ This goes on until both upstream publishers have sent a .finished completion. If either publisher sends a .failure completion, this operator cancels the other publisher and sends the failure on downstream.
+ 
+ Notes:
+ - There are actually two forms of .merge(with:). If both publishers are of the very same type — two Timer.TimerPublishers, or two Publisher.Sequences, or whatever — that is a Publishers.MergeMany. If they are of different types (but with the same Output and Failure types), that is a Publishers.Merge. However, you won’t normally be conscious of this difference, and in any case you could turn the latter into the former by type-erasing both publishers with .eraseToAnyPublisher.
+ 
+ - The syntax for forming all of them is the same: you say .merge(with:) followed by a comma-separated list of publishers. Behind the scenes, these are actually different operators — Publishers.Merge3, Publishers.Merge4, and so on through Publishers.Merge8. But again, you won’t normally be conscious of that fact
+ */
+
+
 fileprivate struct DataService {
     func makePublisher() -> AnyPublisher<Int, Error> {
         Timer.publish(every: 1.0, on: .main, in: .common)
@@ -41,8 +56,8 @@ fileprivate class MergeOperatorBootcampViewModel: ObservableObject {
     private var cancellables = Set<AnyCancellable>()
     
     func startMerge() {
-//        dataservice.mergedPublisher()
-        dataservice.mergeManyPublisher()
+        dataservice.mergedPublisher()
+//        dataservice.mergeManyPublisher()
             .sink { completion in
                 if case .failure(_) = completion {
                     print("Error Received: \(completion)")

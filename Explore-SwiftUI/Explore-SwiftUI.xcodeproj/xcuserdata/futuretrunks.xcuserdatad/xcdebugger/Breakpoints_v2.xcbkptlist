@@ -39,81 +39,97 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "2CCB2301-4CCC-416D-9F2B-35CC66023D27"
+            uuid = "5EB68643-4845-4704-8C1E-19EA39435095"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Explore-SwiftUI/Combine/Operators/TransformerAndBlockers/FlatMap/FlatMapContactsExample.swift"
+            filePath = "Explore-SwiftUI/Swift/Collections/Sequence/SequenceBootcamp.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "59"
-            endingLineNumber = "59"
-            landmarkName = "checkAccess()"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "init()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "F7FC815B-7BC1-4A06-8281-5E636E39C38D"
+            uuid = "D94BC8B0-F59E-4E39-A5B4-E54E18F0AB38"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Explore-SwiftUI/Combine/Operators/TransformerAndBlockers/FlatMap/FlatMapContactsExample.swift"
+            filePath = "Explore-SwiftUI/Swift/Collections/Sequence/SequenceBootcamp.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "72"
-            endingLineNumber = "72"
-            landmarkName = "requestAccess()"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "init()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "47C8F41F-A179-43EA-B21F-C0FBAFF51A8B"
+            uuid = "517917EB-9485-4837-A1FD-0277B85BCE2E"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Explore-SwiftUI/Combine/Operators/TransformerAndBlockers/FlatMap/FlatMapContactsExample.swift"
+            filePath = "Explore-SwiftUI/Swift/Collections/Sequence/SequenceBootcamp.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "contactsBtnClickSubscriber()"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "init(count:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "D766A728-61E6-414D-A396-266F61BCB803"
+            uuid = "99DD275F-27F6-4D9C-B4BB-83F2AB8AA822"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Explore-SwiftUI/Combine/Operators/TransformerAndBlockers/FlatMap/FlatMapContactsExample.swift"
+            filePath = "Explore-SwiftUITests/Swift/Collections/Custom/FunkyArrayTests.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "73"
-            endingLineNumber = "73"
-            landmarkName = "requestAccess()"
+            startingLineNumber = "15"
+            endingLineNumber = "15"
+            landmarkName = "testFunkyArray()"
             landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "539E4F98-EB9F-435D-850D-7BFE7B6DD697"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Explore-SwiftUI/Combine/Operators/TransformerAndBlockers/FlatMap/FlatMapContactsExample.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "74"
-            endingLineNumber = "74"
-            landmarkName = "requestAccess()"
-            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "99DD275F-27F6-4D9C-B4BB-83F2AB8AA822 - d1dd64b149973d08"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Explore_SwiftUITests.FunkyArrayTests.testFunkyArray() -&gt; ()"
+                  moduleName = "Explore-SwiftUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/futuretrunks/Desktop/Explore-SwiftUI/Explore-SwiftUI/Explore-SwiftUITests/Swift/Collections/Custom/FunkyArrayTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "141">
+               </Location>
+               <Location
+                  uuid = "99DD275F-27F6-4D9C-B4BB-83F2AB8AA822 - d1dd64b149973d08"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Explore_SwiftUITests.FunkyArrayTests.testFunkyArray() -&gt; ()"
+                  moduleName = "Explore-SwiftUITests"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/futuretrunks/Desktop/Explore-SwiftUI/Explore-SwiftUI/Explore-SwiftUITests/Swift/Collections/Custom/FunkyArrayTests.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "15"
+                  endingLineNumber = "15"
+                  offsetFromSymbolStart = "213">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

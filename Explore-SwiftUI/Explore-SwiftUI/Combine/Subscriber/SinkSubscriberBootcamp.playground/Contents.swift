@@ -28,7 +28,7 @@ import Combine
  Notes:
  - A .sink subscriber is the most flexible way to answer that question by responding to the arrival of a value
  
- - On the other side of the coin, .assign can dangerous: you can end up with a retain cycle. This occurs in the common situation where what you’re assigning to is a property of self. The workaround is to use .sink instead of .assign, because you can use the capture list to specify that self is weak or unowned, breaking the cycle.
+ - On the other side of the coin, .assign can be dangerous: you can end up with a retain cycle. This occurs in the common situation where what you’re assigning to is a property of self. The workaround is to use .sink instead of .assign, because you can use the capture list to specify that self is weak or unowned, breaking the cycle.
  
  - Moreover, AnyCancellable has the remarkable property that it automatically calls cancel() on its wrapped subscriber when it itself goes out of existence. This means that the whole pipeline right back up to the publisher is cancelled when the wrapper is released. In effect, AnyCancellable gives us memory management for the entire pipeline, along with coherent messaging to the publisher that it no longer needs to produce any values.
  

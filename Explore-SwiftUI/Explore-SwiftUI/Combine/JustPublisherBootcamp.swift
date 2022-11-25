@@ -14,6 +14,8 @@ import Combine
  https://www.youtube.com/watch?v=yBj5zqvrMqA
  
  Definition:
+ - A publisher that emits an output to each subscriber just once, and then finishes.
+ 
  Just publisher is just a mechanism to get a response from a publisher just once
  example: if you are making an api call and you just want to get the response one time once it's done, you'll use the just publisher
  

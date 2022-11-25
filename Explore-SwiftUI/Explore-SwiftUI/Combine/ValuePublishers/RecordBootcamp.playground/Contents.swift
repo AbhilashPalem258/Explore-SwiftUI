@@ -7,6 +7,7 @@ import UIKit
  https://www.apeth.com/UnderstandingCombine/publishers/publishersrecord.html
  
  Definition:
+ A publisher that allows for recording a series of inputs and a completion, for later playback to each subscriber.
  
  Notes:
  */

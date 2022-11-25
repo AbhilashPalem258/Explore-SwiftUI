@@ -8,6 +8,19 @@
 import Combine
 import SwiftUI
 
+/*
+ Source:
+ https://www.apeth.com/UnderstandingCombine/operators/operatorsTransformersBlockers/operatorsswitchtolatest.html
+ 
+ Definition:
+ 
+ Whereas .flatMap makes a publisher, .switchToLatest expects a publisher as the value that it receives from upstream.
+
+ Whereas .flatMap retains the publishers that it makes, .switchToLatest throws away all but the most recent publisher that it receives.
+ 
+ Notes:
+ */
+
 class SwitchToLatestViewModel: ObservableObject {
     @Published var count = [Int]()
     var btnClick = PassthroughSubject<Int, Never>()

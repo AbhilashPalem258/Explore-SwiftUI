@@ -13,6 +13,11 @@ import SwiftUI
  Source:
  
  Definition:
+ - Both publishers must have the same Failure generic types, but their Output types can be different. It is sort of like .zip turned upside-down
+ 
+ .zip waits for both upstream publishers to publish and then emits their oldest contributions as a tuple.
+
+ .combineLatest waits for both upstream publishers to publish and then emits their newest contributions as a tuple.
  
  Notes:
  */

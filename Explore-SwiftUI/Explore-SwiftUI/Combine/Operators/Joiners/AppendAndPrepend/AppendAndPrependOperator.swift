@@ -95,7 +95,7 @@ class AppendAndPrependOperatorBootcampViewModel: ObservableObject {
     
     func startPublishing() {
 //        dataService.makeAppendPublisher()
-        dataService.makePrependPublisher()
+        dataService.makeAppendPublisher()
             .sink { val in
                 self.items.append("\(val)")
             }
