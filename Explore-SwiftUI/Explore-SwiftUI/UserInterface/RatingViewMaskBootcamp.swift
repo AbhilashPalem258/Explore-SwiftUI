@@ -36,11 +36,12 @@ struct RatingViewMaskBootcamp: View {
     
     private var overlayView: some View {
         GeometryReader { proxy in
-            ZStack(alignment: .leading) {
+            HStack {
                 Rectangle()
-//                    .foregroundColor(.yellow)
-                    .fill(LinearGradient(colors: [.red, .blue], startPoint: .leading, endPoint: .trailing))
+                    .foregroundColor(.yellow)
+//                    .fill(LinearGradient(colors: [.red, .blue], startPoint: .leading, endPoint: .trailing))
                     .frame(width: (CGFloat(rating) / 5) * proxy.size.width)
+                Spacer()
             }
         }
         .allowsHitTesting(false)

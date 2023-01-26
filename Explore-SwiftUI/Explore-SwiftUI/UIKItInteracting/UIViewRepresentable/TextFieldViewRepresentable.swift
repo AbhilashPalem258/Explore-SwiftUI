@@ -83,7 +83,7 @@ struct TextFieldViewRepresentable: UIViewRepresentable {
         init(text: Binding<String>) {
             self._text = text
         }
-        
+         
         func textFieldDidChangeSelection(_ textField: UITextField) {
             text = textField.text ?? ""
         }

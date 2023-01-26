@@ -83,7 +83,7 @@ extension ABTabBar {
             }
         }
         .padding(6)
-        .background(Color.white.edgesIgnoringSafeArea(.bottom))
+        .background(Color.white)
         .cornerRadius(10.0)
         .shadow(color: .black.opacity(0.3), radius: 10, x: 0, y: 5)
         .padding(.horizontal)

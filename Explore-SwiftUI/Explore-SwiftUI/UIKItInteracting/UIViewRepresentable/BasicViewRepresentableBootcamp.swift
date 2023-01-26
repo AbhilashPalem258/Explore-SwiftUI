@@ -17,6 +17,7 @@ struct UIViewRepresentableBootcamp: View {
 struct UIViewRepresentableBootcamp_Previews: PreviewProvider {
     static var previews: some View  {
         UIViewRepresentableBootcamp()
+            .preferredColorScheme(.dark)
     }
 }
 
