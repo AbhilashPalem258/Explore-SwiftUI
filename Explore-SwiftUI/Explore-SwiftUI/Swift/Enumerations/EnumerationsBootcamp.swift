@@ -73,6 +73,40 @@ import SwiftUI
     The call to the someFunctionWithEscapingClosure function in the example above is an error because it’s inside a mutating method, so self is mutable. That violates the rule that escaping closures can’t capture a mutable reference to self for structures
  
  - Overusing autoclosures can make your code hard to understand. The context and function name should make it clear that evaluation is being deferred.
+ 
+ Structures and Classes:
+ 
+ Structures and classes in Swift have many things in common. Both can:
+ - Define properties to store values
+ - Define methods to provide functionality
+ - Define subscripts to provide access to their values using subscript syntax
+ - Define initializers to set up their initial state
+ - Be extended to expand their functionality beyond a default implementation
+ - Conform to protocols to provide standard functionality of a certain kind
+ 
+ Classes have additional capabilities that structures don’t have:
+ - Inheritance enables one class to inherit the characteristics of another.
+ - Type casting enables you to check and interpret the type of a class instance at runtime.
+ - Deinitializers enable an instance of a class to free up any resources it has assigned.
+ - Reference counting allows more than one reference to a class instance.
+ 
+ - Classes and actors share many of the same characteristics and behaviors. One of the difference is classes can use inheritance but actors cannot
+ 
+ - All structures have an automatically generated memberwise initializer, which you can use to initialize the member properties of new structure instances. Initial values for the properties of the new instance can be passed to the memberwise initializer by name
+ - Unlike structures, class instances don’t receive a default memberwise initializer.
+ 
+ - all of the basic types in Swift — integers, floating-point numbers, Booleans, strings, arrays and dictionaries — are value types, and are implemented as structures behind the scenes. All structures and enumerations are value types in Swift.
+ 
+ - Collections defined by the standard library like arrays, dictionaries, and strings use an optimization to reduce the performance cost of copying. Instead of making a copy immediately, these collections share the memory where the elements are stored between the original instance and any copies. If one of the copies of the collection is modified, the elements are copied just before the modification. The behavior you see in your code is always as if a copy took place immediately.
+ 
+ - Unlike value types, reference types are not copied when they’re assigned to a variable or constant, or when they’re passed to a function. Rather than a copy, a reference to the same existing instance is used.
+ 
+ - It can sometimes be useful to find out whether two constants or variables refer to exactly the same instance of a class. To enable this, Swift provides two identity operators:
+    * Identical to (===)
+    * Not identical to (!==)
+ 
+ - Note that identical to (represented by three equals signs, or ===) doesn’t mean the same thing as equal to (represented by two equals signs, or ==). Identical to means that two constants or variables of class type refer to exactly the same class instance. Equal to means that two instances are considered equal or equivalent in value, for some appropriate meaning of equal, as defined by the type’s designer
+ 
  */
 
 struct EnumerationsBootcamp: View {

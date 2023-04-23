@@ -34,6 +34,17 @@ import Combine
  - Don’t use a detached task if it’s possible to model the operation using structured concurrency features like child tasks. Child tasks inherit the parent task’s priority and task-local storage, and canceling a parent task automatically cancels all of its child tasks. You need to handle these considerations manually with a detached task.
  - Task.cancel() method. Discarding your reference to a detached task doesn’t implicitly cancel that task, it only makes it impossible for you to explicitly cancel the task.
  
+ - In some situations the priority of a task is elevated — that is, the task is treated as it if had a higher priority, without actually changing the priority of the task:
+ 
+    - If a task runs on behalf of an actor, and a new higher-priority task is enqueued to the actor, then the actor’s current task is temporarily elevated to the priority of the enqueued task. This priority elevation allows the new task to be processed at the priority it was enqueued with.
+    - If a a higher-priority task calls the get() method, then the priority of this task increases until the task completes.
+ 
+    In both cases, priority elevation helps you prevent a low-priority task from blocking the execution of a high priority task, which is also known as priority inversion.
+ 
+ Checked Continuation:
+ 
+    - A continuation must be resumed exactly once. If the continuation has already been resumed through this object, then the attempt to resume the continuation will trap.After resume enqueues the task, control immediately returns to the caller. The task continues executing when its executor is able to reschedule it.
+ 
  Task Cancellation:
  
  -  Likewise, it’s the responsibility of the code running as part of the task to check for cancellation whenever stopping is appropriate. In a long-task that includes multiple pieces, you might need to check for cancellation at several points, and handle cancellation differently at each point. If you only need to throw an error to stop the work, call the Task.checkCancellation() function to check for cancellation.

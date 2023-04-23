@@ -78,11 +78,11 @@ fileprivate class CombineLatestOperatorBootcampViewModel: ObservableObject {
     
     func startPublishing() {
 //        dataService.makeCombineLatestPublisher()
-        dataService.makeCombineLatestPublisher2()
-//        dataService.makeCombineLatestPublisher3()
+//        dataService.makeCombineLatestPublisher2()
+        dataService.makeCombineLatestPublisher3()
             .sink {[weak self] val in
-                self?.items.append(val)
-//                self?.items.append(val.map{String($0)}.joined(separator: ","))
+//                self?.items.append(val)
+                self?.items.append(val.map{String($0)}.joined(separator: ","))
             }
             .store(in: &cancellables)
     }

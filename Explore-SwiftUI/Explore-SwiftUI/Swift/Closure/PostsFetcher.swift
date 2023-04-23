@@ -8,10 +8,14 @@
 import SwiftUI
 
 class DataFetcher {
-    func fetchPosts1(someVal: Int, onCompletion: (String) -> Void) {
+    func fetchPosts1(someVal: Int, onCompletion: @escaping (String) -> Void) {
         //Api Call
-        sleep(3)
-        onCompletion("Some Api Response")
+//        sleep(3)
+//        onCompletion("Some Api Response")
+
+        DispatchQueue.main.asyncAfter(deadline: .now() + .seconds(2)) {
+            onCompletion("Some Api Response")
+        }
     }
     
     func fetchPosts2(someVal: Int, onChange: (String) -> Void, onCompletion: (String) -> Void) {

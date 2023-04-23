@@ -22,7 +22,11 @@ import SwiftUI
     - Define and use new nested types
     - Make an existing type conform to a protocol
  
+ - Extensions add new functionality to an existing class, structure, enumeration, or protocol type.
+ 
  - Extensions can add new functionality to a type, but they can’t override existing functionality.
+ 
+ - An extension can extend an existing type to make it adopt one or more protocols.
  
  - If you define an extension to add new functionality to an existing type, the new functionality will be available on all existing instances of that type, even if they were created before the extension was defined.
  
@@ -31,6 +35,8 @@ import SwiftUI
  - Extensions can add new convenience initializers to a class, but they can’t add new designated initializers or deinitializers to a class. Designated initializers and deinitializers must always be provided by the original class implementation.
  
  - If you use an extension to add an initializer to a value type that provides default values for all of its stored properties and doesn’t define any custom initializers, you can call the default initializer and memberwise initializer for that value type from within your extension’s initializer
+ 
+ - If you use an extension to add an initializer to a structure that was declared in another module, the new initializer can’t access self until it calls an initializer from the defining module.
  */
 
 fileprivate struct DataManager {

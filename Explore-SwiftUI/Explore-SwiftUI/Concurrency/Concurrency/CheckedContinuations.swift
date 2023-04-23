@@ -20,7 +20,7 @@ struct CheckedContinuationDataManager {
                 if let statuscode = (response as? HTTPURLResponse)?.statusCode, (200..<300).contains(statuscode), let data = data, let image = UIImage(data: data) {
                     continuation.resume(returning: image)
                 } else {
-                    continuation.resume(throwing: URLError(.badURL))
+                    continuation.resume(throwing: URLError(.badServerResponse))
                 }
             }
             .resume()

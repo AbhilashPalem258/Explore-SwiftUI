@@ -69,11 +69,11 @@ fileprivate class ZipOperatorBootcampViewModel: ObservableObject {
     
     func startPublishing() {
 //        dataService.makeZipPublisher()
-//        dataService.makeZipPublisher2()
-        dataService.makeZipPublisher3()
+        dataService.makeZipPublisher2()
+//        dataService.makeZipPublisher3()
             .sink {[weak self] val in
-//                self?.items.append(val)
-                self?.items.append(val.map{String($0)}.joined(separator: ","))
+                self?.items.append(val)
+//                self?.items.append(val.map{String($0)}.joined(separator: ","))
             }
             .store(in: &cancellables)
     }

@@ -13,7 +13,8 @@ struct MagnificationGestureBootcamp: View {
     @State var currentAmount: CGFloat = 0.0
     @State var lastAmount: CGFloat = 0.0
     
-    var body: some View {
+    
+    var example1: some View {
         Text("Shiny World!")
             .font(.title)
             .padding()
@@ -30,6 +31,30 @@ struct MagnificationGestureBootcamp: View {
                         lastAmount += currentAmount
                     }
             )
+    }
+    
+    
+    @State private var currentMagnification: CGFloat = 1.0
+    @GestureState private var pinchMagnification: CGFloat = 1.0
+
+    var example2: some View {
+        Circle()
+            .fill(Color.red)
+            .frame(width: 100)
+            .scaleEffect(currentMagnification * pinchMagnification)
+            .gesture(
+                MagnificationGesture()
+                    .updating($pinchMagnification) { value, state, _ in
+                        state = value
+                    }
+                    .onEnded { value in
+                        currentMagnification *= value
+                    }
+            )
+    }
+    
+    var body: some View {
+        example2
     }
 }
 

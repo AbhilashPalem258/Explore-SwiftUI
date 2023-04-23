@@ -34,6 +34,10 @@ import SwiftUI
  
  - Difference between unowned optional references and weak references is when a property is marked as weak, ARC automatically sets a weak reference to nil when the instance that it refers to is deallocated and in case of unowned, ARC never sets an unowned reference’s value to nil. We have to manually set unowned optional to nil
  
+ - The underlying type of an optional value is Optional, which is an enumeration in the Swift standard library. However, optionals are an exception to the rule that value types can’t be marked with unowned.
+ 
+ - The optional that wraps the class doesn’t use reference counting, so you don’t need to maintain a strong reference to the optional.
+ 
  */
 
 //Example 1 - Weak
