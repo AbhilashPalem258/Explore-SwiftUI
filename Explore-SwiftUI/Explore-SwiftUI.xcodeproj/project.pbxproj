@@ -289,6 +289,7 @@
 		00A12B0F297F1B6E004AC190 /* ToggleStyleBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleStyleBootcamp.swift; sourceTree = "<group>"; };
 		00A12B12297F25CC004AC190 /* CustomProgressStyleBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomProgressStyleBootcamp.swift; sourceTree = "<group>"; };
 		00A6C05F2948C83D003793C5 /* ListsBasic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsBasic.swift; sourceTree = "<group>"; };
+		00A7D37429F6D89D0028DCA0 /* Swift KeyPaths.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Swift KeyPaths.playground"; sourceTree = "<group>"; };
 		00A81F97293285C700EA1553 /* MergeSort.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MergeSort.swift; sourceTree = "<group>"; };
 		00A904DF2897C64D0069EAC3 /* RecordBootcamp.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = RecordBootcamp.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		00A904E128981CB40069EAC3 /* ControlPublisher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControlPublisher.swift; sourceTree = "<group>"; };
@@ -945,6 +946,14 @@
 			path = ProgressView;
 			sourceTree = "<group>";
 		};
+		00A7D37329F6D8890028DCA0 /* Keypaths */ = {
+			isa = PBXGroup;
+			children = (
+				00A7D37429F6D89D0028DCA0 /* Swift KeyPaths.playground */,
+			);
+			path = Keypaths;
+			sourceTree = "<group>";
+		};
 		00A904DE2897C6250069EAC3 /* ValuePublishers */ = {
 			isa = PBXGroup;
 			children = (
@@ -1385,6 +1394,7 @@
 		00EF1C9729156629007270B4 /* Swift */ = {
 			isa = PBXGroup;
 			children = (
+				00A7D37329F6D8890028DCA0 /* Keypaths */,
 				008F5FAD29810E0700A1D9E3 /* Closure */,
 				00BE084C292737D3009120D2 /* Collections */,
 				00BE084A29269877009120D2 /* Functions */,
