@@ -11,7 +11,7 @@ import SwiftUI
 struct Explore_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            GlobalActorBootcamp()
+            AsyncOperationView()
         }
     }
 }

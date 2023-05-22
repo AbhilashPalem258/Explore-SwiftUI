@@ -54,7 +54,6 @@ code(for: "3. Static Type KeyPath") {
     print(samplePurchase[keyPath: Purchase.wineryNameKeyPath])
 }
 
-
 code(for: "4. Dynamic Member Lookup 1") {
     // Use DynamicMemberLookups to print the sample purchase's winery's name and country
     print(samplePurchase.name)
