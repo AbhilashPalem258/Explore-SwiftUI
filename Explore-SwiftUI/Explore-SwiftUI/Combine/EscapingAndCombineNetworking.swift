@@ -44,7 +44,7 @@ class PostsDataService {
                 return
             }
             
-            if  let data = data,
+            if let data = data,
                 let response = response as? HTTPURLResponse,
                response.statusCode >= 200 && response.statusCode < 300, let mimeType = response.mimeType, mimeType == "application/json" {
                 let decoder = JSONDecoder()
@@ -201,7 +201,7 @@ struct PostsView: View {
                     Text(post.body)
                         .foregroundColor(.gray)
                 }
-                .frame(maxWidth: .infinity, maxHeight: .infinity)
+//                .frame(maxWidth: .infinity, maxHeight: .infinity)
             }
         }
         .onAppear {

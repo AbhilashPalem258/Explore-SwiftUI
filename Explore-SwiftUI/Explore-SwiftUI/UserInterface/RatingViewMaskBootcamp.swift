@@ -26,9 +26,7 @@ struct RatingViewMaskBootcamp: View {
                     .font(.largeTitle)
                     .foregroundColor(.gray)
                     .onTapGesture {
-                        withAnimation(.easeInOut) {
-                            rating = index
-                        }
+                        rating = index
                     }
             }
         }
@@ -36,13 +34,15 @@ struct RatingViewMaskBootcamp: View {
     
     private var overlayView: some View {
         GeometryReader { proxy in
-            HStack {
+//            HStack {
                 Rectangle()
                     .foregroundColor(.yellow)
 //                    .fill(LinearGradient(colors: [.red, .blue], startPoint: .leading, endPoint: .trailing))
                     .frame(width: (CGFloat(rating) / 5) * proxy.size.width)
-                Spacer()
-            }
+                    .frame(maxWidth: .infinity, alignment: .leading)
+                    .animation(.spring, value: rating)
+//                Spacer()
+//            }
         }
         .allowsHitTesting(false)
     }

@@ -168,6 +168,21 @@
 		00F88D7529F512F9002A918B /* PhoneStocks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00F88D7429F512F9002A918B /* PhoneStocks.swift */; };
 		00FD42DC2983C67B000DAF18 /* SequencedGestureDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FD42DB2983C67B000DAF18 /* SequencedGestureDemo.swift */; };
 		00FDF5E8289AC92700BAE3E0 /* FlatMapContactsExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00FDF5E7289AC92700BAE3E0 /* FlatMapContactsExample.swift */; };
+		D5014A6A2A3CD43C00165EFC /* LongPressGesture1.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5014A692A3CD43C00165EFC /* LongPressGesture1.swift */; };
+		D5014A6D2A3E2CB800165EFC /* SearchableBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5014A6C2A3E2CB800165EFC /* SearchableBootcamp.swift */; };
+		D50A44D42B4096890064E7FC /* ScrollViewImpModifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50A44D32B4096890064E7FC /* ScrollViewImpModifiers.swift */; };
+		D50A44D62B40B06E0064E7FC /* PredefinedScrollTargetBehaviour.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50A44D52B40B06E0064E7FC /* PredefinedScrollTargetBehaviour.swift */; };
+		D50A44D82B40D4F60064E7FC /* ScrollTransitionExample.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50A44D72B40D4F60064E7FC /* ScrollTransitionExample.swift */; };
+		D50A44DB2B4357460064E7FC /* SFSymbolAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50A44DA2B4357460064E7FC /* SFSymbolAnimations.swift */; };
+		D50A44DE2B4798000064E7FC /* PhaseAnimationsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D50A44DD2B4798000064E7FC /* PhaseAnimationsBootcamp.swift */; };
+		D5593D152A41D6E500A171ED /* MGEBasicsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5593D142A41D6E500A171ED /* MGEBasicsView.swift */; };
+		D55E33B52B40379C00488195 /* SettingsObservationsbootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D55E33B42B40379C00488195 /* SettingsObservationsbootcamp.swift */; };
+		D5AD73872B59E0EE00A28B24 /* AsyncStreamBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AD73862B59E0EE00A28B24 /* AsyncStreamBootcamp.swift */; };
+		D5AD738A2B5C977600A28B24 /* AlignmentGuidesBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AD73892B5C977600A28B24 /* AlignmentGuidesBootcamp.swift */; };
+		D5AD738C2B5D921C00A28B24 /* AlignmentGuidesBootcamp2.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5AD738B2B5D921C00A28B24 /* AlignmentGuidesBootcamp2.swift */; };
+		D5BAA21C2AC9C1DB00BF62CD /* AccessibilityVoiceOverBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BAA21B2AC9C1DB00BF62CD /* AccessibilityVoiceOverBootcamp.swift */; };
+		D5BAA21E2AC9C1F000BF62CD /* AccessibilityColorsBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BAA21D2AC9C1F000BF62CD /* AccessibilityColorsBootcamp.swift */; };
+		D5BAA2202AC9C22200BF62CD /* AccessibilityDynamicTextBootcamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5BAA21F2AC9C22200BF62CD /* AccessibilityDynamicTextBootcamp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -357,6 +372,22 @@
 		00FDF5E4289A679A00BAE3E0 /* CollectCombine.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = CollectCombine.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		00FDF5E7289AC92700BAE3E0 /* FlatMapContactsExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlatMapContactsExample.swift; sourceTree = "<group>"; };
 		00FDF5E9289AD24400BAE3E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D5014A692A3CD43C00165EFC /* LongPressGesture1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressGesture1.swift; sourceTree = "<group>"; };
+		D5014A6C2A3E2CB800165EFC /* SearchableBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchableBootcamp.swift; sourceTree = "<group>"; };
+		D50A44D32B4096890064E7FC /* ScrollViewImpModifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewImpModifiers.swift; sourceTree = "<group>"; };
+		D50A44D52B40B06E0064E7FC /* PredefinedScrollTargetBehaviour.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PredefinedScrollTargetBehaviour.swift; sourceTree = "<group>"; };
+		D50A44D72B40D4F60064E7FC /* ScrollTransitionExample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollTransitionExample.swift; sourceTree = "<group>"; };
+		D50A44DA2B4357460064E7FC /* SFSymbolAnimations.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SFSymbolAnimations.swift; sourceTree = "<group>"; };
+		D50A44DD2B4798000064E7FC /* PhaseAnimationsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhaseAnimationsBootcamp.swift; sourceTree = "<group>"; };
+		D5593D142A41D6E500A171ED /* MGEBasicsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MGEBasicsView.swift; sourceTree = "<group>"; };
+		D55E33B42B40379C00488195 /* SettingsObservationsbootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsObservationsbootcamp.swift; sourceTree = "<group>"; };
+		D5AD73862B59E0EE00A28B24 /* AsyncStreamBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncStreamBootcamp.swift; sourceTree = "<group>"; };
+		D5AD73892B5C977600A28B24 /* AlignmentGuidesBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGuidesBootcamp.swift; sourceTree = "<group>"; };
+		D5AD738B2B5D921C00A28B24 /* AlignmentGuidesBootcamp2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlignmentGuidesBootcamp2.swift; sourceTree = "<group>"; };
+		D5BAA2192AC8FFA000BF62CD /* Notes.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Notes.md; sourceTree = "<group>"; };
+		D5BAA21B2AC9C1DB00BF62CD /* AccessibilityVoiceOverBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityVoiceOverBootcamp.swift; sourceTree = "<group>"; };
+		D5BAA21D2AC9C1F000BF62CD /* AccessibilityColorsBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityColorsBootcamp.swift; sourceTree = "<group>"; };
+		D5BAA21F2AC9C22200BF62CD /* AccessibilityDynamicTextBootcamp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessibilityDynamicTextBootcamp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -683,6 +714,8 @@
 		008835F9286C1B1100C9AA6B /* Explore-SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				D5BAA21A2AC9C17100BF62CD /* Accessibility */,
+				D5BAA2182AC8FF8200BF62CD /* KeychainWrapper */,
 				00CBCDB029A202D50095E357 /* KavSoft */,
 				00EF1C9729156629007270B4 /* Swift */,
 				007A459A28A2C34700B8FBD8 /* SOLID */,
@@ -723,6 +756,7 @@
 		0088360B286C2A6A00C9AA6B /* Gestures */ = {
 			isa = PBXGroup;
 			children = (
+				D5014A682A3CD41600165EFC /* LongPressGesture */,
 				00FD42DA2983C656000DAF18 /* Composite */,
 				0088360D286C2DD200C9AA6B /* ProgressLongGestureBootcamp.swift */,
 				00A9FEEB28796222009E87B2 /* MagnificationGestureBootcamp.swift */,
@@ -744,6 +778,8 @@
 		0088360F286C5B4F00C9AA6B /* Animations */ = {
 			isa = PBXGroup;
 			children = (
+				D50A44DC2B4797E70064E7FC /* PhaseAnimations */,
+				D50A44D92B40E2B70064E7FC /* SFSymbols */,
 				00A9CB332944DAD900B347AF /* Basic */,
 				009BC7982886C4D400BCC3FB /* Loading Animations */,
 				00883610286C5B6200C9AA6B /* WaterWaveAnime.swift */,
@@ -756,6 +792,11 @@
 		00883612286C61A800C9AA6B /* SwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				D58ACA902B62B310003E5EB2 /* projects */,
+				D50A44D22B4091C50064E7FC /* ScrollView */,
+				D55E33B32B40378500488195 /* Observation */,
+				D5593D132A41D45D00A171ED /* MatchedGeometryEffect */,
+				D5014A6B2A3E2AE100165EFC /* Search */,
 				00044ED6297E8E4300A7EF79 /* CustomStyles */,
 				008ECC78293EF61100306DB2 /* Beginners */,
 				0088360F286C5B4F00C9AA6B /* Animations */,
@@ -763,7 +804,6 @@
 				0088360B286C2A6A00C9AA6B /* Gestures */,
 				00883608286C1B6900C9AA6B /* Transitions */,
 				00883613286C61B900C9AA6B /* GeometryReaderBootcamp.swift */,
-				00C3DD72286C95B1006AB71C /* MatchedGeometryEffectBootcamp.swift */,
 				0098491B287C025C004995A8 /* ScrollViewReaderBootcamp.swift */,
 				00802B8628800D0900B44376 /* ViewBuilderBootcamp.swift */,
 			);
@@ -773,6 +813,7 @@
 		008ECC78293EF61100306DB2 /* Beginners */ = {
 			isa = PBXGroup;
 			children = (
+				D5AD73882B5C975F00A28B24 /* AlignmentGuides */,
 				00DC7BA729AE5E0C00D42FAA /* DynamicProperty */,
 				00044ED3297E87AD00A7EF79 /* Menu */,
 				0054926229672C9E00ECA212 /* FocusState */,
@@ -1071,6 +1112,7 @@
 		00B617242912758800A9BC56 /* Concurrency */ = {
 			isa = PBXGroup;
 			children = (
+				D5AD73852B59E0DB00A28B24 /* AsyncStreams */,
 				00614D1729F5589C005450D4 /* MainActor */,
 				00F88D7129F460F9002A918B /* Actors */,
 				0036E2E4290F929E005A74D9 /* AsyncPublisherBootcamp.swift */,
@@ -1471,6 +1513,107 @@
 			path = FlatMap;
 			sourceTree = "<group>";
 		};
+		D5014A682A3CD41600165EFC /* LongPressGesture */ = {
+			isa = PBXGroup;
+			children = (
+				D5014A692A3CD43C00165EFC /* LongPressGesture1.swift */,
+			);
+			path = LongPressGesture;
+			sourceTree = "<group>";
+		};
+		D5014A6B2A3E2AE100165EFC /* Search */ = {
+			isa = PBXGroup;
+			children = (
+				D5014A6C2A3E2CB800165EFC /* SearchableBootcamp.swift */,
+			);
+			path = Search;
+			sourceTree = "<group>";
+		};
+		D50A44D22B4091C50064E7FC /* ScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				D50A44D32B4096890064E7FC /* ScrollViewImpModifiers.swift */,
+				D50A44D52B40B06E0064E7FC /* PredefinedScrollTargetBehaviour.swift */,
+				D50A44D72B40D4F60064E7FC /* ScrollTransitionExample.swift */,
+			);
+			path = ScrollView;
+			sourceTree = "<group>";
+		};
+		D50A44D92B40E2B70064E7FC /* SFSymbols */ = {
+			isa = PBXGroup;
+			children = (
+				D50A44DA2B4357460064E7FC /* SFSymbolAnimations.swift */,
+			);
+			path = SFSymbols;
+			sourceTree = "<group>";
+		};
+		D50A44DC2B4797E70064E7FC /* PhaseAnimations */ = {
+			isa = PBXGroup;
+			children = (
+				D50A44DD2B4798000064E7FC /* PhaseAnimationsBootcamp.swift */,
+			);
+			path = PhaseAnimations;
+			sourceTree = "<group>";
+		};
+		D5593D132A41D45D00A171ED /* MatchedGeometryEffect */ = {
+			isa = PBXGroup;
+			children = (
+				00C3DD72286C95B1006AB71C /* MatchedGeometryEffectBootcamp.swift */,
+				D5593D142A41D6E500A171ED /* MGEBasicsView.swift */,
+			);
+			path = MatchedGeometryEffect;
+			sourceTree = "<group>";
+		};
+		D55E33B32B40378500488195 /* Observation */ = {
+			isa = PBXGroup;
+			children = (
+				D55E33B42B40379C00488195 /* SettingsObservationsbootcamp.swift */,
+			);
+			path = Observation;
+			sourceTree = "<group>";
+		};
+		D58ACA902B62B310003E5EB2 /* projects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = projects;
+			sourceTree = "<group>";
+		};
+		D5AD73852B59E0DB00A28B24 /* AsyncStreams */ = {
+			isa = PBXGroup;
+			children = (
+				D5AD73862B59E0EE00A28B24 /* AsyncStreamBootcamp.swift */,
+			);
+			path = AsyncStreams;
+			sourceTree = "<group>";
+		};
+		D5AD73882B5C975F00A28B24 /* AlignmentGuides */ = {
+			isa = PBXGroup;
+			children = (
+				D5AD73892B5C977600A28B24 /* AlignmentGuidesBootcamp.swift */,
+				D5AD738B2B5D921C00A28B24 /* AlignmentGuidesBootcamp2.swift */,
+			);
+			path = AlignmentGuides;
+			sourceTree = "<group>";
+		};
+		D5BAA2182AC8FF8200BF62CD /* KeychainWrapper */ = {
+			isa = PBXGroup;
+			children = (
+				D5BAA2192AC8FFA000BF62CD /* Notes.md */,
+			);
+			path = KeychainWrapper;
+			sourceTree = "<group>";
+		};
+		D5BAA21A2AC9C17100BF62CD /* Accessibility */ = {
+			isa = PBXGroup;
+			children = (
+				D5BAA21B2AC9C1DB00BF62CD /* AccessibilityVoiceOverBootcamp.swift */,
+				D5BAA21D2AC9C1F000BF62CD /* AccessibilityColorsBootcamp.swift */,
+				D5BAA21F2AC9C22200BF62CD /* AccessibilityDynamicTextBootcamp.swift */,
+			);
+			path = Accessibility;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1581,6 +1724,7 @@
 				009BC79A2886C4ED00BCC3FB /* ThreeDotLoading.swift in Sources */,
 				009AAED2292BAC510002B7F1 /* Bag.swift in Sources */,
 				00802B81287F140100B44376 /* DoorArcShapeBootcamp.swift in Sources */,
+				D5AD738C2B5D921C00A28B24 /* AlignmentGuidesBootcamp2.swift in Sources */,
 				00C9CD632891897A00A1CBCD /* FutureDeferredBootcamp.swift in Sources */,
 				003A9C6429521D8900B1E311 /* ColorPickerBasic.swift in Sources */,
 				00802B8728800D0900B44376 /* ViewBuilderBootcamp.swift in Sources */,
@@ -1597,6 +1741,7 @@
 				00C3DD73286C95B1006AB71C /* MatchedGeometryEffectBootcamp.swift in Sources */,
 				00A6C0602948C83D003793C5 /* ListsBasic.swift in Sources */,
 				00820705294A1BE400C4F921 /* BasicContextMenu.swift in Sources */,
+				D5BAA21E2AC9C1F000BF62CD /* AccessibilityColorsBootcamp.swift in Sources */,
 				00E978C4291CDB1C0014D4B5 /* ErrorHandlingBootcamp.swift in Sources */,
 				0014F661286C9F1400AEC6E6 /* SampleTabBar.swift in Sources */,
 				0083F7D4294807DB005D70FD /* BasicNavigation.swift in Sources */,
@@ -1611,6 +1756,8 @@
 				003A9C662953761B00B1E311 /* DatePickerBasic.swift in Sources */,
 				00785B9C29094042004BC43C /* KVOViewBootcamp.swift in Sources */,
 				00A81F98293285C700EA1553 /* MergeSort.swift in Sources */,
+				D5014A6A2A3CD43C00165EFC /* LongPressGesture1.swift in Sources */,
+				D5BAA2202AC9C22200BF62CD /* AccessibilityDynamicTextBootcamp.swift in Sources */,
 				00883616286C680700C9AA6B /* CarouselAnimeBootcamp.swift in Sources */,
 				009FB605289C1B6200F2FC6D /* MergeOperatorBootcamp.swift in Sources */,
 				00D239D2291D248E005D0E8A /* ExtensionsBootcamp.swift in Sources */,
@@ -1625,6 +1772,7 @@
 				00B6CE8C2904EB1200B99EBB /* DoNothing.swift in Sources */,
 				00E5583428828C96002A41C5 /* BasicViewRepresentableBootcamp.swift in Sources */,
 				00D10838287D9FB800F29924 /* RatingViewMaskBootcamp.swift in Sources */,
+				D50A44D62B40B06E0064E7FC /* PredefinedScrollTargetBehaviour.swift in Sources */,
 				00D1083A287EAECB00F29924 /* TriangleBootcamp.swift in Sources */,
 				0036E2EB290F929E005A74D9 /* CheckedContinuations.swift in Sources */,
 				009FB60B289CFDC300F2FC6D /* CombineLatestOperatorBootcamp.swift in Sources */,
@@ -1645,7 +1793,9 @@
 				00A9FEF0287AD099009E87B2 /* DragGestureBootcamp.swift in Sources */,
 				00F88D7529F512F9002A918B /* PhoneStocks.swift in Sources */,
 				009DA5B42889A42D006814CB /* AdvancedCombineBootcamp.swift in Sources */,
+				D50A44D42B4096890064E7FC /* ScrollViewImpModifiers.swift in Sources */,
 				009AAED4292BB7440002B7F1 /* BagUsableBootcamp.swift in Sources */,
+				D5014A6D2A3E2CB800165EFC /* SearchableBootcamp.swift in Sources */,
 				00820707294B558500C4F921 /* AlertsBootcamp.swift in Sources */,
 				0083F7CF29475C06005D70FD /* BasicTransition.swift in Sources */,
 				0036E2E8290F929E005A74D9 /* TaskGroupConcurrency.swift in Sources */,
@@ -1665,6 +1815,7 @@
 				0088360A286C1C3000C9AA6B /* AnyTransitionBootcamp.swift in Sources */,
 				008835FB286C1B1100C9AA6B /* Explore_SwiftUIApp.swift in Sources */,
 				009AAED9292CA4250002B7F1 /* LazySequenceBootcamp.swift in Sources */,
+				D5BAA21C2AC9C1DB00BF62CD /* AccessibilityVoiceOverBootcamp.swift in Sources */,
 				00ACB9DF291FC69B0075FC84 /* EnumerationsBootcamp.swift in Sources */,
 				00D1083C287EB80D00F29924 /* DiamondBootcamp.swift in Sources */,
 				00ABF26B2939241300C4E37C /* BidirectionalCollectionExtension.swift in Sources */,
@@ -1688,23 +1839,30 @@
 				00CBCDB229A2030C0095E357 /* DynamicTabIndicatorsKav.swift in Sources */,
 				00883614286C61B900C9AA6B /* GeometryReaderBootcamp.swift in Sources */,
 				00820709294B605B00C4F921 /* ActionSheetBootcamp.swift in Sources */,
+				D50A44D82B40D4F60064E7FC /* ScrollTransitionExample.swift in Sources */,
 				00A9FEEC28796222009E87B2 /* MagnificationGestureBootcamp.swift in Sources */,
 				00E978C7291D04F90014D4B5 /* TypeCastingBootcamp.swift in Sources */,
+				D50A44DE2B4798000064E7FC /* PhaseAnimationsBootcamp.swift in Sources */,
 				00E5583C28847E0A002A41C5 /* ImagePickerVCRepresentableBootcamp.swift in Sources */,
 				009A4EB52951F555002F2B91 /* PickerBasic.swift in Sources */,
 				00883611286C5B6200C9AA6B /* WaterWaveAnime.swift in Sources */,
+				D5AD73872B59E0EE00A28B24 /* AsyncStreamBootcamp.swift in Sources */,
+				D55E33B52B40379C00488195 /* SettingsObservationsbootcamp.swift in Sources */,
 				000E384F2943AB5F00657B08 /* ShapeBootcamp.swift in Sources */,
 				00ABF26F293DE0A300C4E37C /* MutableCollectionExtension.swift in Sources */,
 				00A12B10297F1B6E004AC190 /* ToggleStyleBootcamp.swift in Sources */,
 				005AF7A32881957E009DEE30 /* ABTabBarBootcamp.swift in Sources */,
 				00802B892880593E00B44376 /* SimplePreferenceKeyBootcamp.swift in Sources */,
+				D5593D152A41D6E500A171ED /* MGEBasicsView.swift in Sources */,
 				00614D1929F558BC005450D4 /* GlobalActorBootcamp.swift in Sources */,
 				00D10841287ECC4A00F29924 /* ArcBootcamp.swift in Sources */,
 				0088360E286C2DD200C9AA6B /* ProgressLongGestureBootcamp.swift in Sources */,
 				00E978C1291CAF960014D4B5 /* PropertiesBootcamp.swift in Sources */,
+				D5AD738A2B5C977600A28B24 /* AlignmentGuidesBootcamp.swift in Sources */,
 				000BD012289F8E2E00078377 /* DelayOperatorBootcamp.swift in Sources */,
 				00E5583A28846D7C002A41C5 /* BasicVCRepresentableBootcamp.swift in Sources */,
 				00CC7A0229A36A5200F226F1 /* AnimatedStickyHeaderKavSoft.swift in Sources */,
+				D50A44DB2B4357460064E7FC /* SFSymbolAnimations.swift in Sources */,
 				009BC79E2886CB1C00BCC3FB /* PublishedIntroduction.swift in Sources */,
 				005AF79828815B73009DEE30 /* SwiftUITabBar.swift in Sources */,
 				00348A5D2963CADD00EA926C /* SystemBGMaterials.swift in Sources */,
@@ -1877,7 +2035,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Explore-SwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = FY7LB4LG7Y;
+				DEVELOPMENT_TEAM = ML69X72R93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Explore-SwiftUI/Info.plist";
@@ -1887,7 +2045,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1895,6 +2053,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.abhilashpalem.Explore-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Explore-SwiftUI/Swift/Attributes/objc/Explore-SwiftUI-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -1912,7 +2073,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Explore-SwiftUI/Preview Content\"";
-				DEVELOPMENT_TEAM = FY7LB4LG7Y;
+				DEVELOPMENT_TEAM = ML69X72R93;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Explore-SwiftUI/Info.plist";
@@ -1922,7 +2083,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1930,6 +2091,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.abhilashpalem.Explore-SwiftUI";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OBJC_BRIDGING_HEADER = "Explore-SwiftUI/Swift/Attributes/objc/Explore-SwiftUI-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;

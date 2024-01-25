@@ -16,8 +16,7 @@ import UIKit
  Notes:
  - A function or method can be declared with the rethrows keyword to indicate that it throws an error only if one of its function parameters throws an error.
  */
-//MARK: - Finding Elements
-//MARK: - Equatable Conformance
+//MARK: - Finding Elements. Equatable Conformance
 extension Sequence where Element: Equatable {
     
     /*
@@ -149,8 +148,17 @@ extension Sequence where Element: Comparable {
 
 //MARK: - Selecting Elements
 extension Sequence {
-    func prefixExt(_ maxLength: Int) -> PrefixSequence<Self> {
-        PrefixSequence(self, maxLength: maxLength)
+    func prefixExt(_ maxLength: Int) -> [Self.Element] {
+        var result = [Element]()
+        var index = 0
+        for item in self {
+            index += 1
+            result.append(item)
+            if index >= maxLength {
+                break
+            }
+        }
+        return result
     }
     
     /*
@@ -184,13 +192,29 @@ extension Sequence {
 }
 //MARK: - Excludinng Elements
 extension Sequence {
-    func dropFirst(_ k: Int = 1) -> DropFirstSequence<Self> {
-        DropFirstSequence(self, dropping: k)
+    func dropFirst(_ k: Int = 1) -> [Self.Element] {
+        var result = [Self.Element]()
+        var index = 0
+        for item in self {
+            index += 1
+            if index > k {
+                result.append(item)
+            }
+        }
+        return result
     }
     
     func dropLast(_ k: Int = 1) -> [Self.Element] {
-       //TODO
-        []
+        var elements = [Element]()
+        var start = 0, end = 0
+        for item in self {
+            if (end - start) >= k {
+                start += 1
+            }
+            elements.append(item)
+            end += 1
+        }
+        return Array(elements[0..<start])
     }
     
     func dropExt(while predicate: (Self.Element) throws -> Bool) rethrows -> [Self.Element] {
@@ -275,6 +299,14 @@ extension Sequence {
         }
         return result
     }
+    
+    func scan<Result>(initial: Result, nextPartialResult: (Result, Self.Element) -> Result) -> [Result] {
+        var result = [initial]
+        for element in self {
+            result.append(nextPartialResult(result.last!, element))
+        }
+        return result
+    }
 }
 //MARK: - Iterating Over a Sequence's Elements
 extension Sequence {
@@ -306,9 +338,14 @@ extension Sequence where Self.Element: Comparable {
     func reversedExt() -> [Self.Element] {
         var elements = [Element]()
         for item in self {
-            elements.insert(item, at: 0)
+            elements.append(item)
         }
-        return elements
+        
+        var result = [Self.Element]()
+        while let lastItem = elements.popLast() {
+            result.append(lastItem)
+        }
+        return result
     }
 }
 

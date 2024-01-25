@@ -15,11 +15,11 @@ struct TextBootcamp: View {
 //            .bold()
 //            .underline()
             .underline(true, color: .green)
-            .italic()
             .strikethrough(true, color: .brown)
             .font(.system(size: 23, weight: .semibold, design: .rounded))
-            .baselineOffset(30) // Space below everyline line text
-//            .baselineOffset(-30) // Space above everyline line text
+            .italic()
+//            .baselineOffset(30) // Space below everyline line text
+            .baselineOffset(-30) // Space above everyline line text
             .kerning(0) // Space b/w characters
             .multilineTextAlignment(.center) // alignment
             .foregroundColor(.red)

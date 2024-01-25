@@ -9,6 +9,15 @@ import Combine
 import Foundation
 import SwiftUI
 
+/*
+Throttle always emits first element and starts sending recent or first value in interval starting from second element
+ 
+ Measure Interval:
+ - Time intervals are reported as Stride structs; the actual time is the struct’s magnitude property, whose size depends on the scheduler. For a DispatchQueue, it is an Int reporting nanoseconds
+ 
+    .measureInterval(using: DispatchQueue.main)
+    .map {Double($0.magnitude)/1000000000}
+ */
 fileprivate struct DataService {
     func makeThrottlePublisher() -> AnyPublisher<Int, Never> {
         Timer.publish(every: 1.0, on: .main, in: .common)

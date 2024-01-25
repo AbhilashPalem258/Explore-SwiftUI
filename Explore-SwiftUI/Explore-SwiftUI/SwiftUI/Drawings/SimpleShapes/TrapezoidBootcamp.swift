@@ -24,7 +24,7 @@ struct Trapezoid: Shape {
 struct TrapezoidBootcamp: View {
     var body: some View {
         Trapezoid()
-            .frame(width: 300, height: 100)
+            .frame(width: 300, height: 200)
     }
 }
 

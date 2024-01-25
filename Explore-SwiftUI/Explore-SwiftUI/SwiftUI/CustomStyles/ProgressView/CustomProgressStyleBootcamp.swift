@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CustomProgressStyleBootcamp: View {
     
-    @State private var progress: CGFloat = 0.0
+    @State private var progress: CGFloat = 0.5
     
     var body: some View {
         VStack{

@@ -13,6 +13,7 @@ class Person: NSCopying {
     }
     
     func copy(with zone: NSZone? = nil) -> Any {
+        print("calling copy")
         let copy = Person(firstName: firstName, lastName: lastName, age: age)
         return copy
     }

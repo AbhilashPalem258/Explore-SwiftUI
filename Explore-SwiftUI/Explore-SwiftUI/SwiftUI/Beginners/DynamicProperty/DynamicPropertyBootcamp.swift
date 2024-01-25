@@ -26,7 +26,9 @@ struct Document: DynamicProperty {
     init(_ filename: String) {
         let paths = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
         url = paths[0].appendingPathComponent(filename)
-        _value = State(initialValue: "")
+        
+        let initialText = (try? String(contentsOf: url)) ?? ""
+        _value = State(wrappedValue: initialText)
     }
     
     var wrappedValue: String {
@@ -52,14 +54,19 @@ struct Document: DynamicProperty {
 }
 
 struct DynamicPropertyBootcamp: View {
+    
     @Document("abhilash.txt") private var document
+//    private var document = Document("abhilash.txt")
+    
     var body: some View {
         NavigationView {
             VStack {
                 TextEditor(text: $document)
+//                TextEditor(text: document.projectedValue)
 
                 Button("Change document") {
                     document = String(Int.random(in: 1...1000))
+//                    document.wrappedValue = String(Int.random(in: 1...1000))
                 }
             }
             .navigationTitle("SimpleText")

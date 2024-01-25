@@ -99,7 +99,7 @@ struct FirstNavScreen: View {
 
 struct SecondNavScreen: View {
     
-    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         ZStack {
@@ -119,7 +119,7 @@ struct SecondNavScreen: View {
                 }
                 
                 Button {
-                    presentationMode.wrappedValue.dismiss()
+                    dismiss()
                 } label: {
                     Text("Dismiss")
                         .defaultBtnStyle()

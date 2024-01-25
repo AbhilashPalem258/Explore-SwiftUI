@@ -8,13 +8,33 @@
 import Foundation
 import SwiftUI
 
+/*
+ Source link:
+ https://www.youtube.com/watch?v=xGNR7tvDE0Q
+ 
+ Definition:
+ Matched Geometry Effect defines a group of views with synchronized geometry using an identifier and namespace we provide
+ 
+ - Transitioning Views
+ - @Namespace
+ - matchedGeometryEffect method that utilizes the namespace and matches views with Identical ID's
+ - Match either the size, position or full frame to transform one view to another
+ - Specify Anchor points
+ 
+ - A namespace is a dynamic property type that allows access to a namespace defined by the persistent identity of the object containing the property
+ 
+ Notes:
+ 
+
+ */
+
 struct MatchedGeometryEffectSample: View {
     
     @State private var isClicked = false
     @Namespace var namespace
     
     var body: some View {
-        VStack() {
+        VStack {
             if !isClicked {
                 RoundedRectangle(cornerRadius: 10)
                     .fill(.green)

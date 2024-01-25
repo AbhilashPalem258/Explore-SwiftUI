@@ -21,7 +21,7 @@ import SwiftUI
 struct TimerBootcamp: View {
     
     let timer = Timer.publish(every: 1.0, on: .main, in: .common).autoconnect()
-    
+        
     //Current Time
     /*
      @State var date: Date = Date()

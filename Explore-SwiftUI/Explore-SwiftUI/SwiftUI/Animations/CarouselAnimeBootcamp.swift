@@ -12,7 +12,7 @@ struct CarouselAnimeBootcamp: View {
     var body: some View {
         ScrollView(.horizontal, showsIndicators: false) {
             HStack {
-                ForEach(0..<1) { _ in
+                ForEach(0..<6) { _ in
                     GeometryReader { geoProxy in
                         RoundedRectangle(cornerRadius: 25)
                             .rotation3DEffect(Angle(degrees: getPercentage(geoProxy: geoProxy) *  40), axis: (0.0, 1.0, 0.0))
@@ -21,14 +21,13 @@ struct CarouselAnimeBootcamp: View {
                     .padding(16)
                 }
             }
-            .background(.teal)
         }
     }
     
     func getPercentage(geoProxy: GeometryProxy) -> Double {
         let maxDistance = UIScreen.main.bounds.width / 2
         let currentX = geoProxy.frame(in: .global).midX
-        print("currentX: \(currentX), Percentage: \(Double(1 - currentX/maxDistance))")
+        print("currentX: \(currentX), maxDistance: \(maxDistance), Percentage: \(Double(1 - currentX/maxDistance))")
         return Double(1 - currentX/maxDistance)
     }
 }

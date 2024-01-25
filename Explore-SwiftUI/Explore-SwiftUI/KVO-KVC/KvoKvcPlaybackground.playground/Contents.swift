@@ -46,7 +46,7 @@ import UIKit
  It would be possible to address the last point by adding a simple adapter around the KVO interfaces.
  */
 
-class Pokemon: NSObject {
+final class Pokemon: NSObject {
     @objc dynamic var name: String
     
     init(name: String) {

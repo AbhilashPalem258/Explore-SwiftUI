@@ -11,9 +11,15 @@ import SwiftUI
  Source:
  animationImplement1 - https://www.youtube.com/watch?v=0H4G3lGnJE0&list=PLwvDm4VfkdphqETTBf-DdjCoAvhai1QpO&index=27
  
+ Good one Imp: https://www.appcoda.com/swiftui-animation-basics-building-a-loading-indicator/
+ 
  Definition:
  
  Notes:
+ 
+ Transaction:
+ https://swiftwithmajid.com/2020/10/07/transactions-in-swiftui/
+ https://www.hackingwithswift.com/quick-start/swiftui/how-to-override-animations-with-transactions
  */
 
 struct AnimationBasic: View {
@@ -29,10 +35,10 @@ struct AnimationBasic: View {
                     Animation
                         .easeInOut(duration: 5)
 //                        .delay(2)
-//                        .repeatCount(5, autoreverses: true)
+                        .repeatCount(2, autoreverses: true)
 //                        .repeatCount(5, autoreverses: false)
 //                        .repeatForever()
-                        .repeatForever(autoreverses: false)
+//                        .repeatForever(autoreverses: false)
                 ) {
                     self.isAnimated.toggle()
                 }
@@ -55,7 +61,7 @@ struct AnimationBasic: View {
                     width: isAnimated ? 100 : 300,
                     height: isAnimated ? 100 : 300
                 )
-                .rotationEffect( Angle(degrees: isAnimated ? 360 : 0))
+                .rotationEffect(Angle(degrees: isAnimated ? 360 : 0))
                 .offset(y: isAnimated ? 300: 0)
             
             Spacer()
@@ -75,10 +81,12 @@ struct AnimationBasic: View {
                     .background(.blue)
                     .cornerRadius(10)
             }
+            
             Spacer()
             
             RoundedRectangle(cornerRadius: 20)
                 .frame(width: isAnimated ? 350 : 0, height: 100)
+
             // Constant speed throught the animation
                 .animation(.linear, value: isAnimated)
             

@@ -37,16 +37,16 @@ struct BasicTransition: View {
                         LinearGradient(colors: [.red, .blue], startPoint: .topLeading, endPoint: .bottomTrailing)
                     )
                     .frame(height: UIScreen.main.bounds.height * 0.5)
-//                    .transition(AnyTransition.slide)
+                    .transition(AnyTransition.slide)
 //                    .transition(AnyTransition.opacity)
 //                    .transition(AnyTransition.scale)
 //                    .transition(AnyTransition.move(edge: .bottom))
 //                    .transition(AnyTransition.move(edge: .leading))
-                    .transition(
-                        AnyTransition.asymmetric(
-                            insertion: AnyTransition.move(edge: .leading), removal: AnyTransition.move(edge: .bottom)
-                        )
-                    )
+//                    .transition(
+//                        AnyTransition.asymmetric(
+//                            insertion: AnyTransition.move(edge: .leading), removal: AnyTransition.move(edge: .bottom)
+//                        )
+//                    )
             }
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)

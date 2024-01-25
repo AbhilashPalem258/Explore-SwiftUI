@@ -17,7 +17,7 @@ struct DatePickerBasic: View {
             
             VStack {
                 DatePicker("Date Picker", selection: $selectedDate)
-                    .datePickerStyle(GraphicalDatePickerStyle())
+                    .datePickerStyle(DefaultDatePickerStyle())
                     .accentColor(.red)
             }
         }

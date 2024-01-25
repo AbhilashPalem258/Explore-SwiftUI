@@ -11,7 +11,12 @@ import SwiftUI
 struct Explore_SwiftUIApp: App {
     var body: some Scene {
         WindowGroup {
-            AsyncOperationView()
+            if #available(iOS 17.0, *) {
+                PhaseAnimationsBootcamp()
+                    .preferredColorScheme(.light)
+            } else {
+                SampleTabBar()
+            }
         }
     }
 }

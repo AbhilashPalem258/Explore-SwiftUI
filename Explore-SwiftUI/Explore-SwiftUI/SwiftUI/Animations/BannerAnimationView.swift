@@ -10,7 +10,7 @@ import SwiftUI
 
 struct BannerAnimationView: View {
     
-    @State var selection: Int = 1
+    @State var selection: Int = 0
     let timer = Timer.publish(every: 1.0, on: .main, in: .common).autoconnect()
     
     var body: some View {
@@ -20,26 +20,26 @@ struct BannerAnimationView: View {
             TabView(selection: $selection) {
                 Rectangle()
                     .foregroundColor(.red)
-                    .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
+//                    .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
                     .tag(1)
                 
                 Rectangle()
                     .foregroundColor(.green)
-                    .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
+//                    .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
                     .tag(2)
                 
                 Rectangle()
                     .foregroundColor(.blue)
-                    .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
+//                    .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
                     .tag(3)
                 
                 Rectangle()
                     .foregroundColor(.purple)
-                    .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
+//                    .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .move(edge: .leading)))
                     .tag(4)
             }
             .tabViewStyle(PageTabViewStyle())
-//            .frame(height: 200)
+            .frame(height: 200)
         }
         .onReceive(timer) { value in
             withAnimation(.easeInOut) {

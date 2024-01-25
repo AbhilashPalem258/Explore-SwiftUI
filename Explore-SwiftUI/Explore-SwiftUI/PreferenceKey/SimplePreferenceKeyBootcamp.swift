@@ -56,7 +56,7 @@ fileprivate struct SecondaryView: View {
 }
 
 fileprivate struct CustomPreferenceKey: PreferenceKey {
-    static var defaultValue: String = ""
+    static let defaultValue: String = ""
     
     static func reduce(value: inout String, nextValue: () -> String) {
         value = nextValue()

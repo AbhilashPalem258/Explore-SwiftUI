@@ -18,6 +18,8 @@ import SwiftUI
 
  Whereas .flatMap retains the publishers that it makes, .switchToLatest throws away all but the most recent publisher that it receives.
  
+ So what .switchToLatest does is this: It waits for a publisher to come to it as a value from upstream. When it does, it retains that publisher and starts it publishing — and what the downstream sees are the values produced by that publisher.
+ 
  Notes:
  */
 

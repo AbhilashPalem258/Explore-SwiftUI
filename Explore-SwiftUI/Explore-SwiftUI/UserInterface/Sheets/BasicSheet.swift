@@ -9,6 +9,8 @@ import SwiftUI
 
 
 // Presentation Detents: https://www.youtube.com/watch?v=sG_udb_7NMc
+// https://www.hackingwithswift.com/quick-start/swiftui/how-to-show-a-popover-view
+
 struct BasicSheet: View {
     
     @State private var showSecondView: Bool = false
@@ -30,11 +32,14 @@ struct BasicSheet: View {
                     .cornerRadius(10.0)
             }
         }
-        .sheet(isPresented: $showSecondView) {
-            print("Dismissed Second View")
-        } content: {
+        .popover(isPresented: $showSecondView) {
             SecondView()
         }
+//        .sheet(isPresented: $showSecondView) {
+//            print("Dismissed Second View")
+//        } content: {
+//            SecondView()
+//        }
 //        .fullScreenCover(isPresented: $showSecondView) {
 //            print("Dismissed Second View")
 //        } content: {
@@ -46,7 +51,7 @@ struct BasicSheet: View {
 
 fileprivate struct SecondView: View {
     
-    @Environment(\.presentationMode) var presentationMode
+    @Environment(\.dismiss) var dismiss
     
     var body: some View {
         ZStack {
@@ -56,7 +61,7 @@ fileprivate struct SecondView: View {
             VStack(alignment: .leading) {
                 HStack {
                     Button {
-                        presentationMode.wrappedValue.dismiss()
+                        dismiss()
                     } label: {
                         Image(systemName: "xmark")
                             .font(.headline)
@@ -69,10 +74,9 @@ fileprivate struct SecondView: View {
                 
                 Spacer()
             }
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
             
             Button {
-                presentationMode.wrappedValue.dismiss()
+                dismiss()
             } label: {
                 Text("Dismiss")
                     .font(.headline)

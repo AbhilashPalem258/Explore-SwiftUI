@@ -235,7 +235,7 @@ struct TaskBootcamp: View {
         }
         .navigationTitle("Child Task Exploration")
         .onAppear {
-            vm.fetchChildTaskExploration(priority: .background)
+            vm.fetchChildTaskExploration(priority: .userInitiated)
         }
     }
     
@@ -302,7 +302,7 @@ struct TaskBootcamp: View {
     
     var body: some View {
         NavigationView {
-            imageLoadingCollection
+            taskPriorityDescriptionView
         }
     }
 }

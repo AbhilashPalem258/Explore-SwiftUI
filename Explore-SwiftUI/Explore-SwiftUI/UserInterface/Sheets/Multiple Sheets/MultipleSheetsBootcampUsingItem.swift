@@ -18,7 +18,6 @@ fileprivate struct BtnRegular: ViewModifier {
             .background(.blue)
             .cornerRadius(10)
             .shadow(radius: 10)
-            
     }
 }
 

@@ -56,8 +56,8 @@ fileprivate struct StandardButtonStyle: ButtonStyle {
             .background(bgColor)
             .cornerRadius(cornerRadius)
 //            .opacity(configuration.isPressed ? 0.3 : 1.0)
-            .scaleEffect(configuration.isPressed ? 0.9 : 1.0)
-            .animation(.spring(), value: 0.5)
+            .scaleEffect(configuration.isPressed ? 0.8 : 1.0)
+            .animation(.spring(), value: configuration.isPressed )
     }
 }
 
@@ -129,7 +129,7 @@ fileprivate struct StandardBtnStyle: ButtonStyle {
             RoundedRectangle(cornerRadius: 10, style: .continuous)
                 .stroke(actionType.strokeColor, lineWidth: 1)
         )
-        .opacity(configuration.isPressed ? 0.2 : 1.0)
+        .opacity(configuration.isPressed ? 0.6 : 1.0)
     }
 }
 

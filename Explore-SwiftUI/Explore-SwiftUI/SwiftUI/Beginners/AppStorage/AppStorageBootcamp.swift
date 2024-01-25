@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AppStorageBootcamp: View {
     
-    @AppStorage("UserName") private var name: String = ""
+    @AppStorage("UserName", store: .standard) private var name: String = ""
     
     var body: some View {
         ZStack {

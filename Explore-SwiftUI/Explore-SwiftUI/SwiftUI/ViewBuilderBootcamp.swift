@@ -34,7 +34,7 @@ struct HeaderViewRegular: View {
             RoundedRectangle(cornerRadius: 5)
                 .frame(height: 2)
         }
-        .frame(maxWidth: .infinity, alignment: .leading)
+//        .frame(maxWidth: .infinity)
         .padding()
     }
 }

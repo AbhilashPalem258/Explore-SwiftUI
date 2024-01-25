@@ -15,7 +15,7 @@ fileprivate class FlightSerialQ {
     private var lock = DispatchQueue(label: "lock")
     
     func bookSeat() -> String {
-        lock.sync {
+        lock.sync(flags: .barrier) {
             let seat = availableSeats.removeFirst()
             return seat
         }

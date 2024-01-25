@@ -86,7 +86,7 @@ struct CombineLatestBootcamp: View {
                         .lineLimit(1)
                         .foregroundColor(.white)
                     Spacer()
-                    Toggle(isOn: $vm.agreedToTnc) {}
+                    Toggle(isOn: $vm.agreedToTnc, label: {})
                         .labelsHidden()
                 }
                 .padding(.horizontal)
@@ -115,5 +115,10 @@ struct CombineLatestBootcamp: View {
             )
             .padding(.horizontal, 30)
         }
+    }
+}
+struct CombineLatestBootcamp_previews: PreviewProvider {
+    static var previews: some View {
+        CombineLatestBootcamp()
     }
 }

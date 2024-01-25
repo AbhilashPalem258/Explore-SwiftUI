@@ -8,15 +8,7 @@
 import SwiftUI
 
 // Start: Dev Documentation - LazySequenceProtocol
-extension Sequence {
-    func scan<Result>(initial: Result, nextPartialResult: (Result, Self.Element) -> Result) -> [Result] {
-        var result = [initial]
-        for element in self {
-            result.append(nextPartialResult(result.last!, element))
-        }
-        return result
-    }
-}
+
 struct LazyScanSequence<Base: Sequence, Result>: LazySequenceProtocol {
     let initial: Result
     let base: Base

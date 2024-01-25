@@ -94,7 +94,6 @@ struct PhoneStocksView: View {
         NavigationView {
             ZStack {
                 Color.brown.edgesIgnoringSafeArea(.all)
-                    .frame(maxWidth: .infinity, maxHeight: .infinity)
                 
                 Button {
                     viewModel.executeActorFlow()
@@ -107,6 +106,9 @@ struct PhoneStocksView: View {
                         .background(.black)
                         .cornerRadius(10)
                 }
+            }
+            .onAppear {
+                viewModel.executeActorFlow()
             }
         }
     }

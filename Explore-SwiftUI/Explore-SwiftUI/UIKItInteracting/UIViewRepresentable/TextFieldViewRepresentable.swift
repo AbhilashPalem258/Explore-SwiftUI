@@ -8,6 +8,8 @@
 import Foundation
 import SwiftUI
 
+//Attributed Text: https://swiftui-lab.com/attributed-strings-with-swiftui/
+
 struct TextFieldViewRepresentableBootcamp: View {
     
     @State var text: String = ""

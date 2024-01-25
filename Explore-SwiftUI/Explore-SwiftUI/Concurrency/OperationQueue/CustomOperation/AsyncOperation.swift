@@ -114,7 +114,7 @@ class AsyncOperationDemo: NSObject {
     func startOperation() {
         
         let operation1 = AsyncOperation1()
-        let operation2 = AsyncOperation2()
+//        let operation2 = AsyncOperation2()
         
         operation1.observe(\.isFinished, options: [.initial, .new]) { operation, change in
             print("✅ isFinished changed for Operation 1: \(String(describing: change.newValue!))")
@@ -131,22 +131,22 @@ class AsyncOperationDemo: NSObject {
             print("🐣 isReady changed for Operation 1: \(String(describing: change.newValue!))")
         }
         .append(storage: &tokens)
-        
-        operation2.observe(\.isFinished, options: [.initial, .new]) { operation, change in
-            print("✅ isFinished changed for Operation 2: \(String(describing: change.newValue!))")
-        }
-        .append(storage: &tokens)
-        
-        operation2.observe(\.isExecuting, options: [.initial, .new]) { operation, change in
-            print("🐢 isExecuting changed for Operation 2: \(String(describing: change.newValue!))")
-        }
-        .append(storage: &tokens)
-        
-        operation2.observe(\.isReady, options: [.initial, .new]) { operation,
-            change in
-            print("🐣 isReady changed for Operation 2: \(String(describing: change.newValue!))")
-        }
-        .append(storage: &tokens)
+                
+//        operation2.observe(\.isFinished, options: [.initial, .new]) { operation, change in
+//            print("✅ isFinished changed for Operation 2: \(String(describing: change.newValue!))")
+//        }
+//        .append(storage: &tokens)
+//
+//        operation2.observe(\.isExecuting, options: [.initial, .new]) { operation, change in
+//            print("🐢 isExecuting changed for Operation 2: \(String(describing: change.newValue!))")
+//        }
+//        .append(storage: &tokens)
+//
+//        operation2.observe(\.isReady, options: [.initial, .new]) { operation,
+//            change in
+//            print("🐣 isReady changed for Operation 2: \(String(describing: change.newValue!))")
+//        }
+//        .append(storage: &tokens)
 //
 //        operation1.addObserver(self, forKeyPath: "isFinished", options: [.new, .initial, .old], context: operation1Context)
 //        operation1.addObserver(self, forKeyPath: "isExecuting", options: [.new, .initial, .old], context: operation1Context)
@@ -157,9 +157,9 @@ class AsyncOperationDemo: NSObject {
 //        operation2.addObserver(self, forKeyPath: "isReady", options: [.new, .initial, .old], context: operation2Context)
         
         let operationQueue = OperationQueue()
-        operation2.addDependency(operation1)
+//        operation2.addDependency(operation1)
         operationQueue.addOperation(operation1)
-        operationQueue.addOperation(operation2)
+//        operationQueue.addOperation(operation2)
     }
     
     override func observeValue(forKeyPath keyPath: String?, of object: Any?, change: [NSKeyValueChangeKey : Any]?, context: UnsafeMutableRawPointer?) {

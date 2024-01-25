@@ -50,7 +50,7 @@ struct LazyVGridBootcamp: View {
                                     .bold()
                                     .foregroundColor(.white)
                             }
-                            .padding(.horizontal, 4)
+                            .padding(.horizontal, 10)
                     }
                     
                     Section {

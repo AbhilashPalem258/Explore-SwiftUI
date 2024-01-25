@@ -20,6 +20,18 @@ fileprivate struct ActionButtonStyle: ViewModifier {
     }
 }
 
+fileprivate struct CustomBtnStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .font(.headline.weight(.bold))
+            .foregroundColor(.white)
+            .padding()
+            .padding(.horizontal, 20)
+            .background(Color.black)
+            .cornerRadius(10)
+    }
+}
+
 struct ProgressLongGestureBootcamp: View {
     
     @State private var isComplete = false

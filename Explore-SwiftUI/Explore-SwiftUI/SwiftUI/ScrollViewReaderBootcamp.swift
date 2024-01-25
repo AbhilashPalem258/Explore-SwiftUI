@@ -18,9 +18,10 @@ struct ScrollViewReaderBootcamp: View {
             
             TextField("Enter #", text: $textfieldText)
                 .frame(height: 55)
-                .border(Color.gray)
                 .padding(.horizontal)
+                .border(Color.gray)
                 .keyboardType(.numberPad)
+                .padding(.horizontal)
             
             Button("Scroll Now") {
                 if let index = Int(textfieldText) {

@@ -26,7 +26,7 @@ import SwiftUI
 
 @globalActor
 fileprivate final class MyGlobalActor {
-    static var shared = FruitDataManager()
+    static let shared = FruitDataManager()
 }
 
 fileprivate actor FruitDataManager {

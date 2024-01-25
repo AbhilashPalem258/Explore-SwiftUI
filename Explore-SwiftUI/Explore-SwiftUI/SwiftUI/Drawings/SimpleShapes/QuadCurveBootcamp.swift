@@ -14,7 +14,7 @@ struct Wave: Shape {
             path.move(to: CGPoint(x: rect.minX, y: rect.midY))
             path.addQuadCurve(to: CGPoint(x: rect.midX, y: rect.midY), control: CGPoint(x: rect.midX/2, y: rect.minY))
             path.addQuadCurve(to: CGPoint(x: rect.maxX, y: rect.midY), control: CGPoint(x: rect.midX + rect.midX/2, y: rect.maxY))
-            path.move(to: CGPoint(x: rect.maxX, y: rect.midY))
+//            path.move(to: CGPoint(x: rect.maxX, y: rect.midY))
         }
     }
 }

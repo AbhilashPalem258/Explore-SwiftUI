@@ -25,7 +25,7 @@ struct TaskConcurrency: View {
                         Image(uiImage: img)
                             .resizable()
                             .scaledToFit()
-                            .frame(height: 150)
+//                            .frame(height: 150)
                     }
                 }
             }
@@ -33,26 +33,26 @@ struct TaskConcurrency: View {
             .onAppear {
                 Task {
                     do {
-                        async let fetchImage1 = fetchImage()
-                        async let fetchImage2 = fetchImage()
-                        async let fetchImage3 = fetchImage()
-                        async let fetchImage4 = fetchImage()
-                        
-                        let (image1, image2, image3, image4) = await (try fetchImage1, try fetchImage2, try fetchImage3, try fetchImage4)
-                        
-                        self.images.append(contentsOf: [image1, image2, image3, image4])
+//                        async let fetchImage1 = fetchImage()
+//                        async let fetchImage2 = fetchImage()
+//                        async let fetchImage3 = fetchImage()
+//                        async let fetchImage4 = fetchImage()
 //
-//                        let image1 = try await fetchImage()
-//                        images.append(image1)
+//                        let (image1, image2, image3, image4) = try await (fetchImage1, fetchImage2, fetchImage3, fetchImage4)
 //
-//                        let image2 = try await fetchImage()
-//                        images.append(image2)
+//                        self.images.append(contentsOf: [image1, image2, image3, image4])
 //
-//                        let image3 = try await fetchImage()
-//                        images.append(image3)
-//
-//                        let image4 = try await fetchImage()
-//                        images.append(image4)
+                        let image1 = try await fetchImage()
+                        images.append(image1)
+
+                        let image2 = try await fetchImage()
+                        images.append(image2)
+
+                        let image3 = try await fetchImage()
+                        images.append(image3)
+
+                        let image4 = try await fetchImage()
+                        images.append(image4)
                     } catch {
                         print("Error while downloading image: \(error)")
                     }

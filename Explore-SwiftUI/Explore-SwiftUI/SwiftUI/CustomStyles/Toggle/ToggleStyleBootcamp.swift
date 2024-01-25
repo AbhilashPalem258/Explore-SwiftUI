@@ -76,12 +76,13 @@ fileprivate struct ColoredSwitchToggleStyle: ToggleStyle {
                 .overlay(alignment: configuration.isOn ? .trailing : .leading) {
                     RoundedRectangle(cornerRadius: 5)
                         .fill(foregroundColor)
-                        .frame(width: 25, height: 20)
+                        .frame(width: 25)
                 }
+                .animation(Animation.linear(duration: 0.2), value: configuration.isOn)
                 .onTapGesture {
-                    withAnimation(Animation.linear(duration: 0.2)) {
+//                    withAnimation() {
                         configuration.isOn.toggle()
-                    }
+//                    }
                 }
         }
     }

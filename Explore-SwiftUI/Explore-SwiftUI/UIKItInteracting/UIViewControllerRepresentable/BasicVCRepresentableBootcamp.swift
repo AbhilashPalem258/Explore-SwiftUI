@@ -8,6 +8,10 @@
 import Foundation
 import SwiftUI
 
+/*
+ Using SwiftUI  in UIKIt: https://developer.apple.com/videos/play/wwdc2022/10072/
+ */
+
 struct BasicVCRepresentableBootcamp: View {
     @State var showUIScreen = false
     var body: some View {
@@ -31,7 +35,7 @@ struct BasicVCRepresentableBootcamp: View {
         .sheet(isPresented: $showUIScreen) {
             print("Dismissed UIKIt")
         } content: {
-            BasicVCRepresentable(labelText: "From SSwiftUI")
+            BasicVCRepresentable(labelText: "From SwiftUI")
         }
 
     }

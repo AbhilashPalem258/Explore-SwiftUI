@@ -55,15 +55,11 @@ fileprivate struct DataManager {
     
     private func fetchImage(urlStr: String) async throws -> UIImage {
         let url = URL(string: urlStr)!
-        do {
-            let (data, _) = try await URLSession.shared.data(from: url, delegate: nil)
-            if let image = UIImage(data: data) {
-                return image
-            } else {
-                throw URLError(.badURL)
-            }
-        } catch {
-            throw error
+        let (data, _) = try await URLSession.shared.data(from: url, delegate: nil)
+        if let image = UIImage(data: data) {
+            return image
+        } else {
+            throw URLError(.badURL)
         }
     }
 }

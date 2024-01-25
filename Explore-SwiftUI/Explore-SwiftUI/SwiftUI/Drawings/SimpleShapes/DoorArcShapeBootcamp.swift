@@ -25,6 +25,7 @@ struct DoorArcShapeBootcamp: View {
         DoorArc()
             .stroke(style: StrokeStyle(lineWidth: 5, lineCap: .round, dash: [10]))
             .frame(width: 200, height: 300)
+            .background(.red)
     }
 }
 

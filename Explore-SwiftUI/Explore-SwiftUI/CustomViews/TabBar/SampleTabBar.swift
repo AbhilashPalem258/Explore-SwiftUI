@@ -20,7 +20,7 @@ struct SampleTabBar: View {
                 ForEach(categories, id: \.self) { category in
                     ZStack(alignment: .bottom) {
                         if selectedCategory == category {
-                            RoundedRectangle(cornerRadius: 10)
+                            RoundedRectangle(cornerRadius: 2)
                                 .fill(.red)
                                 .matchedGeometryEffect(id: "subcategory", in: namespace)
                                 .frame(width: 55, height: 4)
@@ -33,18 +33,19 @@ struct SampleTabBar: View {
                     }
                     .frame(maxWidth: .infinity)
                     .frame(height: 55)
+                    .animation(.easeInOut, value: selectedCategory)
                     .onTapGesture {
-                        withAnimation(.easeInOut) {
+//                        withAnimation(.easeInOut) {
                             selectedCategory = category
-                        }
+//                        }
                     }
                 }
             }
             .padding(.horizontal, 10)
             Spacer()
         }
-        .frame(maxWidth: .infinity, maxHeight: .infinity)
-        .background(.white)
+//        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .background(.cyan)
     }
 }
 

@@ -19,6 +19,7 @@ struct TimeLineViewBasic: View {
                 Circle()
                     .trim(from: 0, to: Double(seconds)/60.0)
                     .stroke(Color.purple, style: StrokeStyle(lineWidth: 10))
+                    .rotationEffect(Angle(degrees: -90))
             }
         }
         .padding()

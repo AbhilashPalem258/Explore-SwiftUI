@@ -77,8 +77,41 @@ import SwiftUI
  
  - A failable initializer can also delegate to a nonfailable initializer. Use this approach if you need to add a potential failure state to an existing initialization process that doesn’t otherwise fail.
  
- Resume at OVERIDING A FAILABLE INIT
+ - You can override a superclass failable initializer in a subclass, just like any other initializer. Alternatively, you can override a superclass failable initializer with a subclass nonfailable initializer. This enables you to define a subclass for which initialization can’t fail, even though initialization of the superclass is allowed to fail.
  
+ - Note that if you override a failable superclass initializer with a nonfailable subclass initializer, the only way to delegate up to the superclass initializer is to force-unwrap the result of the failable superclass initializer.
+ 
+ - You can override a failable initializer with a nonfailable initializer but not the other way around.
+ 
+ -  you can define a failable initializer that creates an implicitly unwrapped optional instance of the appropriate type. Do this by placing an exclamation point after the init keyword (init!) instead of a question mark
+ 
+ - You can delegate from init? to init! and vice versa, and you can override init? with init! and vice versa. You can also delegate from init to init!, although doing so will trigger an assertion if the init! initializer causes initialization to fail.
+ 
+ Required Initializer:
+ - Write the required modifier before the definition of a class initializer to indicate that every subclass of the class must implement that initializer
+ 
+ - You must also write the required modifier before every subclass implementation of a required initializer, to indicate that the initializer requirement applies to further subclasses in the chain. You don’t write the override modifier when overriding a required designated initializer
+ 
+ - You don’t have to provide an explicit implementation of a required initializer if you can satisfy the requirement with an inherited initializer.
+ 
+ Setting a default property value with a function or closure
+ - If a stored property’s default value requires some customization or setup, you can use a closure or global function to provide a customized default value for that property. Whenever a new instance of the type that the property belongs to is initialized, the closure or function is called, and its return value is assigned as the property’s default value.
+ 
+ - These kinds of closures or functions typically create a temporary value of the same type as the property, tailor that value to represent the desired initial state, and then return that temporary value to be used as the property’s default value.
+ 
+ 
+ class SomeClass {
+     let someProperty: SomeType = {
+         // create a default value for someProperty inside this closure
+         // someValue must be of the same type as SomeType
+         return someValue
+     }()
+ }
+ 
+ - Note that the closure’s end curly brace is followed by an empty pair of parentheses. This tells Swift to execute the closure immediately. If you omit these parentheses, you are trying to assign the closure itself to the property, and not the return value of the closure
+ 
+ - If you use a closure to initialize a property, remember that the rest of the instance hasn’t yet been initialized at the point that the closure is executed. This means that you can’t access any other property values from within your closure, even if those properties have default values. You also can’t use the implicit self property, or call any of the instance’s methods.
+  
  
 - Properties of optional type are automatically initialized with a value of nil, indicating that the property is deliberately intended to have “no value yet” during initialization.
  

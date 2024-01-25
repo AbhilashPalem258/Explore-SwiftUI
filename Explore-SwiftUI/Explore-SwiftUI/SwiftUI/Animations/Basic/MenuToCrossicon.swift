@@ -10,7 +10,7 @@ import SwiftUI
 // https://www.youtube.com/watch?v=duBGN8vD8g4
 struct MenuToCrossicon: View {
     
-    @State private var isMenu = false
+    @State private var isMenu = true
     
     var body: some View {
         VStack(spacing: 14) {

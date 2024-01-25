@@ -50,7 +50,7 @@ struct BadgeBasic: View {
     }
     
     var body: some View {
-        tabViewExample
+        listViewExample
     }
 }
 
